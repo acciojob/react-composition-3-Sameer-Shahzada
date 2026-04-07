@@ -10,14 +10,9 @@ const Tooltip = ({ text, children }) => {
     onMouseEnter: () => setShow(true),
     onMouseLeave: () => setShow(false),
     children: (
-       <>
+      <>
         {children.props.children}
-        <div
-          className="tooltiptext"
-          style={{ display: show ? "block" : "none" }}
-        >
-          {text}
-        </div>
+        {show ? <div className="tooltiptext">{text}</div> : null}
       </>
     )
   });

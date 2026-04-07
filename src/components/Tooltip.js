@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './../styles/App.css';
 
 const Tooltip = ({ text, children }) => {
 
@@ -11,7 +12,7 @@ const Tooltip = ({ text, children }) => {
     children: (
       <>
         {children.props.children}
-        {show && <div className="tooltiptext">{text}</div>}
+        {show ? <div className="tooltiptext">{text}</div> : null}
       </>
     )
   });

@@ -6,16 +6,12 @@ const App = () => {
   return (
     <div>
 
-      <Tooltip text="This is tooltip for Text 1">
-        <p>Hover over me (Text 1)</p>
+      <Tooltip text="Tooltip for heading">
+        <h2>Hover me</h2>
       </Tooltip>
 
-      <Tooltip text="Tooltip for Button">
-        <button>Hover Button</button>
-      </Tooltip>
-
-      <Tooltip text="Tooltip for Span">
-        <span>Hover Span</span>
+      <Tooltip text="Tooltip for paragraph">
+        <p>Hover paragraph</p>
       </Tooltip>
 
     </div>
